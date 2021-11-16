@@ -45,6 +45,12 @@ export const firestore = firebase.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ propmt: 'select_account' });
 
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const signInWithGoogle = async e => {
+  try {
+    await auth.signInWithPopup(provider);
+  } catch (error) {
+    console.log('Login cancelled by user');
+  }
+};
 
 export default firebase;
