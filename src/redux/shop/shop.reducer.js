@@ -9,20 +9,17 @@ const INITIAL_STATE = {
 const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ShopActionTypes.FETCH_COLLECTIONS_START:
-      console.log('START');
       return {
         ...state,
         isFetching: true,
       };
     case ShopActionTypes.FETCH_COLLECTIONS_SUCCESS:
-      console.log('SUCCESS');
       return {
         ...state,
         isFetching: false,
         collections: action.payload,
       };
     case ShopActionTypes.FETCH_COLLECTIONS_FAILURE:
-      console.log('FAILED');
       return {
         ...state,
         isFetching: false,
