@@ -22,7 +22,7 @@ export const CollectionItemContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 40vw;
+    width: 45vw;
 
     &:hover {
       .image {

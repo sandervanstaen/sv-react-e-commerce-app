@@ -13,11 +13,10 @@ export const TitleTag = styled.div`
 export const ItemsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
+  grid-gap: 1.25rem;
 
   & > div {
     padding: 0 0.25rem;
-    width: 100%;
   }
 
   @media screen and (max-width: 800px) {

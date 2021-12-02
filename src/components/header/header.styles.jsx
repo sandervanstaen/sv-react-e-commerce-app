@@ -11,6 +11,7 @@ export const HeaderContainer = styled.div`
   top: 0;
   z-index: 10;
   background-color: white;
+  padding: 0 1.5rem 0 0;
 
   @media screen and (max-width: 800px) {
     padding: 10px;
