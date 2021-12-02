@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const CollectionPageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 0.5rem;
 `;
 export const TitleTag = styled.div`
   font-size: 38px;
@@ -12,9 +13,16 @@ export const TitleTag = styled.div`
 export const ItemsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0.5rem;
 
   & > div {
-    margin-bottom: 30px;
+    padding: 0 0.25rem;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
   }
 `;

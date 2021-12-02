@@ -3,11 +3,12 @@ import CustomButton from '../custom-button/custom-button.component';
 
 export const CollectionItemContainer = styled.div`
   width: 22vw;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  height: 350px;
-  align-items: center;
   position: relative;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     .image {
@@ -65,16 +66,11 @@ export const CollectionFooterContainer = styled.div`
   width: 100%;
   height: 5%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   font-size: 18px;
 `;
 
-export const NameContainer = styled.span`
-  width: 90%;
-  margin-bottom: 15px;
-`;
+export const NameContainer = styled.span``;
 
-export const PriceContainer = styled.span`
-  width: 10%;
-  text-align: right;
-`;
+export const PriceContainer = styled.span``;
